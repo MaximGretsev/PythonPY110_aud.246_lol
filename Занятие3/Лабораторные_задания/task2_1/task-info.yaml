@@ -19,25 +19,25 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 52
-    length: 60
+  - offset: 53
+    length: 94
     placeholder_text: '{}  # TODO c помощью dict comprehension сформировать словарь'
     initial_state:
       length: 60
       offset: 52
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '{i: i ** 2 for i in range(1, 11)}'
-  - offset: 124
-    length: 45
+  - offset: 159
+    length: 76
     placeholder_text: '...  # TODO сеализовать словарь в JSON строку'
     initial_state:
       length: 45
       offset: 124
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: json.dumps(dict_numbers, indent=4)
   text: |
     import json
@@ -54,5 +54,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 06 May 2022 16:53:31 UTC
 record: -1

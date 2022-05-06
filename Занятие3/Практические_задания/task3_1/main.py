@@ -17,6 +17,7 @@ def from_pickle_file(filename: str):
     with open(filename, "rb") as f:
         obj = pickle.load(f)
 
+
     return obj
 
 

@@ -8,27 +8,27 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 58
-    length: 36
+  - offset: 87
+    length: 52
     placeholder_text: '# TODO считать содержимое JSON файла'
     initial_state:
       length: 36
       offset: 58
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       with open(filename) as f:
               json_data = json.load(f)
-  - offset: 107
-    length: 53
+  - offset: 220
+    length: 220
     placeholder_text: '...  # TODO найти максимальный элемент по ключу score'
     initial_state:
       length: 53
       offset: 107
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'max(json_data, key=lambda item: item["score"])'
   text: |
     import json
@@ -1253,5 +1253,11 @@ files:
       }
     ]
   learner_created: false
-status: Unchecked
+- name: output.json
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 06 May 2022 17:07:05 UTC
 record: -1

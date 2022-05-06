@@ -31,14 +31,14 @@ files:
   visible: true
   placeholders:
   - offset: 70
-    length: 57
+    length: 128
     placeholder_text: '...  # TODO перезаписать содержимое одного файла в другой'
     initial_state:
       length: 57
       offset: 70
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       with open(INPUT_FILE, "r") as input_file:
               with open(OUTPUT_FILE, "w") as output_file:
@@ -63,5 +63,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 06 May 2022 16:50:20 UTC
 record: -1

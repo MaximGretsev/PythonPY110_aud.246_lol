@@ -10,16 +10,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 395
-    length: 85
+  - offset: 413
+    length: 127
     placeholder_text: 'print(python_obj)  # TODO распечатать объект как JSON строку
       с отступами и кодировкой'
     initial_state:
       length: 85
       offset: 395
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: print(json.dumps(python_obj, indent=4, ensure_ascii=False))
   text: |
     import json
@@ -60,5 +60,8 @@ files:
         "русские слова": "c ними беда :(("
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 06 May 2022 15:45:38 UTC
 record: -1

@@ -11,12 +11,12 @@ def from_json_file():
 
 
 def to_json_file(python_object):
-    with open(OUTPUT_FILE, "w") as f:
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(python_object, f, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":
     python_obj = from_json_file()
-    print(python_obj)  # TODO распечатать объект как JSON строку с отступами и кодировкой
+    print(json.dumps(python_obj, indent=4, ensure_ascii=False))  # TODO распечатать объект как JSON строку с отступами и кодировкой
 
     to_json_file(python_obj)

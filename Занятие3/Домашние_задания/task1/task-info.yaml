@@ -13,5 +13,16 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+- name: first_file.txt
+  visible: true
+  learner_created: true
+- name: second_file.txt
+  visible: true
+  learner_created: true
+status: Failed
+feedback:
+  message: Incorrect
+  time: Fri, 06 May 2022 17:30:11 UTC
+  actual: |
+    [('[1, 2, 3, 4, 6, 7, 9, 10, 12, 14, 1, 2]', '[2, 3, 5, 10, 12, 15, 12, 20, 10, 19, 112, 19]')]
 record: -1
